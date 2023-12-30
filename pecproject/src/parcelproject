@@ -1,0 +1,8 @@
+my-parcel-project/
+|-- src/
+|   |-- index.html
+|   |-- index.js
+|   `-- styles.css
+|-- .parcelrc
+|-- package.json
+`-- node_modules/ (generado después de ejecutar `npm install`)

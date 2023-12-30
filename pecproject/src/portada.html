@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/details-element-polyfill"></script>
+  <link rel="icon" href="img/logotp.ico" type="image/x-icon">
+  <title>Twin Peaks</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .clip-path-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .clip-path-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    #link-to-index {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    #link-to-index:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="clip-path-container">
+      <img src="img/portadapeakss.jpg" alt="Vista panorámica de Twin Peaks, una serie de televisión que presenta paisajes misteriosos y emocionantes" class="clip-path-image">
+    </div>
+    <div class="content">
+      <h1>Twin Peaks</h1>
+      <a id="link-to-index" href="index.html" tabindex="0"> Donde los misterios cobran vida </a>
+    </div>
+  </header>
+
+</body>
+</html>

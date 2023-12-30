@@ -1,0 +1,384 @@
+body {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  margin-bottom: 5%;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 40px;
+  background-color: rgba(169, 169, 169, 0.7);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border: none;
+  border-radius: 10px;
+}
+
+.title, .transparent-box, .transparent-box a {
+  color: white;
+}
+
+.transparent-box, .transparent-box a {
+  text-decoration: none;
+  background-color: rgba(192, 192, 192, 0.8);
+}
+
+.primer-header {
+  background-color: rgba(192, 192, 192, 0.8);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.primer-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.primer-header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.primer-header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container { padding: 10px; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  p { font-size: 14px; }
+  img { max-width: 100%; height: auto; }
+}
+
+#formulario-container {
+  text-align: center;
+  margin: auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(192, 192, 192, 0.5);
+}
+
+
+#formulario-container h1 {
+  font-size: 1.5em; 
+}
+
+#formulario-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formulario-container label {
+  margin-bottom: 5px; 
+}
+
+#formulario-container input {
+  width: 100%; 
+  padding: 8px; 
+  margin-bottom: 15px; 
+}
+
+#formulario-container button {
+  background-color: #333; 
+  color: white; 
+  padding: 10px; 
+  border: none; 
+  cursor: pointer; 
+}
+
+#formulario-container button:hover {
+  background-color: #555;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; 
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color:#ffffff;
+}
+
+#contenedor {
+  position: relative;
+}
+
+#texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.intro {
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+  background-color: rgba(169, 169, 169, 0.7); 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.intro h1 {
+  font-size: 2em;
+}
+
+.intro h2 {
+  font-size: 1.5em;
+}
+
+.intro p {
+  font-size: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.transparent-box .logos {
+  width: 200px;
+  height: 200px;
+  background-color: #e6ebdc;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  color: burlywood;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.transparent-box .logos:hover {
+  transform: rotate(360deg); 
+}
+
+.logo-container {
+  width: 100px;
+  height: 82px;
+  border-radius: 25px;
+  background: lightgray 50% / cover no-repeat;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.logo-container:hover {
+  transform: rotate(360deg); 
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.transparent-box {
+  transition: transform 0.3s ease-in-out;
+}
+
+.transparent-box:hover {
+  transform: scale(1.1);
+}
+
+.logo-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-container:hover {
+  transform: rotate(360deg);
+}
+
+.primer-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+}
+
+.video-container {
+  margin: 20px auto; /* Auto para centrar horizontalmente */
+  position: relative;
+  width: 80%; /* Ajusta el ancho según tus necesidades */
+  max-width: 800px; /* Establece un ancho máximo para dispositivos grandes */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logos {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logos:hover {
+  transform: rotate(360deg);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+.logo-footer {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-footer:hover {
+  transform: rotate(360deg);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-links:hover {
+  transform: scale(1.2);
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.escenariomagico {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 10px; 
+  text-align: justify; 
+}
+
+h2 a {
+  font-size: 36px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.escenariomagico a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.escenariomagico a:hover {
+  color: #ffcc00;
+}
+
+img.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.sin-subrayado {
+  text-decoration: none;
+  color: white;
+  background-color: transparent; 
+}
+
+.logo {
+  width: 50px; /* Ajusta el tamaño según tus necesidades */
+  margin-right: 10px; /* Ajusta el espacio entre el logo y el texto según tus necesidades */
+}
+
+.sin-subrayado {
+  text-decoration: none;
+}
